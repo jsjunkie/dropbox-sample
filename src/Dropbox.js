@@ -72,7 +72,8 @@ export default class Dropbox extends Component {
       files => {
         let reqFiles = files.entries
           .filter(entry => entry[".tag"] === "file")
-          .map(file => ({ name: file.name, id: file.id }));
+          .map(file => ({ name: file.name, id: file.id }))
+          .slice(0, 10);
         this.setState({ filesShown: true, files: reqFiles });
       },
       error => console.log(error)
