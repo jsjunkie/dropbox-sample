@@ -1,0 +1,25 @@
+.button {
+  width: auto;
+  font-size: 20px;
+  background: orange;
+  margin: 20px;
+}
+
+.button:hover {
+  background: white;
+  color: orange;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.files {
+  list-style-type: none;
+}
+
+.file {
+  padding: 10px;
+  border: 1px solid orange;
+  text-align: left;
+}
